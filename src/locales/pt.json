@@ -1,0 +1,125 @@
+{
+  "navbar": {
+    "portfolio": "Portfolio",
+    "clients": "Clientes",
+    "team": "Team",
+    "about": "Quem Somos",
+    "contact": "Contato"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Somos uma produtora global especializada em projetos de vídeos impossíveis. Oferecemos todas as soluções dentro de um Filme ou campanha publicitária com entregas de altíssima qualidade cinematográficas para nossos clientes. Atuamos como um estúdio tecnológico, temos um time in-house de experts em",
+    "highlight": "VFX, 3D, CGI, animações, direção de artes e, coloristas.",
+    "descriptionEnd": "Além de pilotos experientes em drones e FPV.",
+    "projects": "PROJETOS",
+    "secretos": "Secretos",
+    "cta": "FALE COM A BRAUER"
+  },
+  "about": {
+    "section": "Quem Somos",
+    "title": "Desafiando",
+    "titleHighlight": "a Realidade",
+    "description1": "A Brauer Vision Films não é apenas uma produtora. É um laboratório visual onde a fronteira entre o real e o digital deixa de existir. Especialistas em",
+    "specialties": "CGI, VFX e Animação 3D",
+    "description1End": ", nós criamos universos inteiros do zero.",
+    "description2": "Seja um personagem carismático estilo Pixar ou uma simulação de fluídos hiper-realista, nossa obsessão é o detalhe. Também aplicamos essa excelência técnica em produções para negócios locais e eventos, trazendo o \"cinema look\" para todos os formatos.",
+    "services": {
+      "3d": {
+        "title": "3D & CGI",
+        "desc": "Mundos e objetos fotorrealistas."
+      },
+      "vfx": {
+        "title": "VFX Compositing",
+        "desc": "Integração perfeita de elementos."
+      },
+      "motion": {
+        "title": "Motion Design",
+        "desc": "Grafismos dinâmicos e impactantes."
+      },
+      "animation": {
+        "title": "Animação",
+        "desc": "De personagens a ambientes completos."
+      }
+    },
+    "since": "Since",
+    "marquee": "BRAUER VISION FILMS /// VFX /// CGI /// 3D /// FUTURE /// BRAUER VISION FILMS /// VFX /// CGI /// 3D /// FUTURE"
+  },
+"clients": {
+    "section": "Parceiros",
+    "title": "Marcas que",
+    "titleHighlight": "Confiam",
+    "description": "De startups inovadoras a grandes corporações, entregamos visuais que definem o futuro."
+  },
+  "team": {
+    "title1": "The",
+    "titleHighlight": "Minds",
+    "title2": "Behind Vision",
+    "bios": {
+      "yan": "Especialista em ver o que ainda não existe e transformar em realidade com resultado no universo VFX & 3D.",
+      "fernanda": "Especialista em criação de processos sólidos sustentáveis da produção."
+    }
+  },
+  "contact": {
+    "title": "Start",
+    "titleHighlight": "Project_",
+    "description": "Pronto para elevar o nível? Preencha os dados e inicie a renderização da sua próxima grande ideia.",
+    "location": {
+      "title": "Base de Operações",
+      "value": "Salvador - BA, Brasil"
+    },
+    "email": {
+      "title": "Email",
+      "value": "contato@brauervisionfilms.com"
+    },
+    "phone": {
+      "title": "Telefone",
+      "value": "+55 (71) 99963-4445"
+    },
+    "form": {
+      "title": "Transmit_Data",
+      "name": {
+        "label": "User_Name",
+        "placeholder": "DIGITE SEU NOME"
+      },
+      "email": {
+        "label": "Email_Address",
+        "placeholder": "DIGITE SEU EMAIL"
+      },
+      "subject": {
+        "label": "Subject_Type",
+        "placeholder": "SELECIONE O TIPO DE PROJETO",
+        "options": {
+          "vfx": "VFX & CGI",
+          "animation": "Animação 3D",
+          "commercial": "Comercial / Evento",
+          "local": "Negócios Locais"
+        }
+      },
+      "message": {
+        "label": "Transmission_Data",
+        "placeholder": "DESCREVA SUA VISÃO..."
+      },
+      "submit": "Enviar Dados",
+      "submitting": "Enviando..."
+    },
+    "validation": {
+      "nameRequired": "Nome é obrigatório",
+      "nameTooLong": "Nome muito longo",
+      "emailInvalid": "Email inválido",
+      "emailTooLong": "Email muito longo",
+      "subjectRequired": "Selecione um tipo de projeto",
+      "messageRequired": "Mensagem é obrigatória",
+      "messageTooLong": "Mensagem muito longa"
+    },
+    "toast": {
+      "success": "Mensagem enviada com sucesso! Verifique seu email para confirmação.",
+      "error": "Erro ao enviar mensagem. Tente novamente."
+    }
+  },
+  "footer": {
+    "description": "Produtora audiovisual especializada em VFX, CGI e Animação 3D. Criando o impossível desde 2019.",
+    "quickLinks": "Links Rápidos",
+    "socialMedia": "Redes Sociais",
+    "copyright": "Todos os direitos reservados."
+  }
+}

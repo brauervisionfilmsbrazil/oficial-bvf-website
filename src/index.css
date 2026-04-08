@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@400;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 15% 2%;
+    --foreground: 187 100% 94%;
+
+    --card: 240 10% 5%;
+    --card-foreground: 187 100% 94%;
+
+    --popover: 240 10% 5%;
+    --popover-foreground: 187 100% 94%;
+
+    --primary: 187 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 289 98% 54%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 5% 15%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 289 98% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 100% / 0.1;
+    --input: 0 0% 100% / 0.1;
+    --ring: 187 100% 50%;
+
+    --radius: 0rem;
+
+    /* Brauer Custom Colors */
+    --brauer-black: 240 15% 2%;
+    --brauer-dark: 240 10% 5%;
+    --brauer-cyan: 187 100% 50%;
+    --brauer-purple: 289 98% 54%;
+    --brauer-gold: 45 100% 50%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brauer-cyan)), hsl(var(--brauer-purple)));
+    --gradient-glow-cyan: 0 0 20px hsl(var(--brauer-cyan) / 0.5);
+    --gradient-glow-purple: 0 0 20px hsl(var(--brauer-purple) / 0.5);
+  }
+
+  .dark {
+    --background: 240 15% 2%;
+    --foreground: 187 100% 94%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans overflow-x-hidden;
+  }
+
+  /* Cyberpunk Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--brauer-black));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, hsl(var(--brauer-cyan)), hsl(var(--brauer-purple)));
+  }
+
+  /* Custom Selection */
+  ::selection {
+    background: hsl(var(--brauer-cyan));
+    color: hsl(0 0% 0%);
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px hsl(var(--brauer-cyan) / 0.5), 0 0 20px hsl(var(--brauer-cyan) / 0.3);
+  }
+
+  .text-glow-purple {
+    text-shadow: 0 0 10px hsl(var(--brauer-purple) / 0.5), 0 0 20px hsl(var(--brauer-purple) / 0.3);
+  }
+
+  .gradient-text {
+    @apply text-transparent bg-clip-text;
+    background-image: var(--gradient-primary);
+  }
+
+  .noise-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  /* Hide cursor on desktop */
+  @media (hover: hover) {
+    .cursor-none-desktop {
+      cursor: none !important;
+    }
+    .cursor-none-desktop * {
+      cursor: none !important;
+    }
+  }
+}
