@@ -83,11 +83,4 @@ export const TEAM: TeamMember[] = [
     imageUrl: "/images/team-yan.png",
     bio: "Especialista em ver o que ainda não existe e transformar em realidade com resultado no universo VFX & 3D.",
   },
-  {
-    id: 2,
-    name: "Fernanda Vial",
-    role: "FOUNDER | EXECUTIVE PRODUCER",
-    imageUrl: "/images/team-fernanda.png",
-    bio: "Especialista em criação de processos sólidos sustentáveis da produção.",
-  },
 ];

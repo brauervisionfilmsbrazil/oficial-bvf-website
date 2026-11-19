@@ -8,9 +8,6 @@ const TEAM_SOCIAL: Record<string, { instagram?: string; linkedin?: string }> = {
     instagram: "https://www.instagram.com/yanbrauer_",
     linkedin: "https://www.linkedin.com/in/yanbrauer",
   },
-  "Fernanda Vial": {
-    instagram: "https://www.instagram.com/fehvial",
-  },
 };
 
 const Team = () => {
@@ -54,8 +51,7 @@ const Team = () => {
                   <h3 className="text-3xl font-display font-black text-foreground uppercase italic mb-4">{member.name}</h3>
                   
                   <p className="text-muted-foreground text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity delay-200">
-                    {member.name === "Yan Brauer" ? t('team.bios.yan') : 
-                     member.name === "Fernanda Vial" ? t('team.bios.fernanda') : member.bio}
+                    {member.name === "Yan Brauer" ? t('team.bios.yan') : member.bio}
                   </p>
 
                   {/* Social Links */}
